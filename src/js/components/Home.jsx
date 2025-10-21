@@ -1,11 +1,8 @@
 import React from "react";
 
 import NavBar from './NavBar.jsx';
-
-import Jumbotron from "./Jumbotron.jsx";
-
-//include images into your bundle
-import rigoImage from "../../img/rigo-baby.jpg";
+import Jumbotron from "./Jumbotron.jsx"
+import Cards from "./cards.jsx";
 
 
 //create your first component
@@ -14,11 +11,12 @@ const Home = () => {
 
 		<div>
 			<NavBar />
-      <Jumbotron
-		    title="Welcome to our website"
-		    description="This is our website!"
-		    paragraph="See a bunch of different cards"
-		/>
+			<Jumbotron
+				title="Welcome to our website"
+				description="This is our website!"
+				paragraph="See a bunch of different cards"
+			/>
+			<Cards />
 		</div>
 	);
 };
